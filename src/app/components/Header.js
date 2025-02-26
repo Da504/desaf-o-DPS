@@ -22,7 +22,7 @@ export const Headers = ({
   };
   return (
     <header>
-      <h1>Tienda de Libros</h1>
+      <h1>Digital Nexus</h1>
       <div className="container-icon">
         <div className="container-cart-icon" onClick={() => setActive(!active)}>
           <img
