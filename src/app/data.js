@@ -38,4 +38,6 @@ export const data = [
       "https://contentv2.tap-commerce.com/cover/large/9789878000473_1.jpg?id_com=1113",
     quantity: 1,
   },
+
+  
 ];
