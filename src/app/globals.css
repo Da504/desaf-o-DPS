@@ -117,9 +117,9 @@ header {
   font-size: 18px;
 }
 
-.tumbal {
-  width: 64px;
-  height: 64px;
+.imagen-producto-carrito {
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -227,13 +227,98 @@ header {
   color: var(--secondary-color);
 }
 
-.hidden {
-  display: none;
+.btn-generar-factura {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.titulo-producto {
-  font-size: 18px;
-  color: #333; /* Cambia el color si es necesario */
-  display: block;
+.btn-generar-factura:hover {
+  background-color: #e65c00;
+}
+
+/* Modal de la factura */
+.modal-factura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-contenido h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
   text-align: center;
+}
+
+.modal-contenido table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.modal-contenido th,
+.modal-contenido td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-contenido th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.modal-contenido tfoot td {
+  font-weight: bold;
+  background-color: #f5f7fa;
+}
+
+.modal-contenido button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.modal-contenido button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-cart-products {
+    width: 90%;
+    right: 5%;
+  }
+
+  .modal-contenido {
+    width: 90%;
+  }
 }

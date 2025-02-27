@@ -20,8 +20,9 @@ export const ProductList = ({
     }
     setTotal(total + product.price * product.quantity);
     setCountProducts(countProducts + product.quantity);
-    setAllProducts([...allProducts, product]);
+    setAllProducts([...allProducts, { ...product, quantity: 1 }]); // Asegúrate de agregar la cantidad
   };
+
   return (
     <div className="container-items">
       {data.map((product) => (
